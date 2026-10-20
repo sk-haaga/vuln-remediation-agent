@@ -1,0 +1,288 @@
+{
+  "repo": "eval/fixtures/web-app",
+  "mode": "rules (no model configured)",
+  "summary": {
+    "vulnerabilities": 30,
+    "fixed": 18,
+    "escalated": 12,
+    "escalated_by_reason": {
+      "install-failed": 2,
+      "tests-failed": 10
+    },
+    "pull_requests": 4,
+    "issues": 2
+  },
+  "notes": [],
+  "outcomes": [
+    {
+      "package": "flask",
+      "vuln": "CVE-2023-30861",
+      "outcome": "escalated",
+      "reason": "install-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-flask-2-2-2-needs-manual-review-install-failed.md"
+    },
+    {
+      "package": "flask",
+      "vuln": "CVE-2026-27205",
+      "outcome": "escalated",
+      "reason": "install-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-flask-2-2-2-needs-manual-review-install-failed.md"
+    },
+    {
+      "package": "idna",
+      "vuln": "CVE-2024-3651",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.6",
+      "to_version": "3.15",
+      "link": "pull-requests/idna-3.15.md"
+    },
+    {
+      "package": "idna",
+      "vuln": "CVE-2026-45409",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.6",
+      "to_version": "3.15",
+      "link": "pull-requests/idna-3.15.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-22195",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.1.2",
+      "to_version": "3.1.6",
+      "link": "pull-requests/jinja2-3.1.6.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-34064",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.1.2",
+      "to_version": "3.1.6",
+      "link": "pull-requests/jinja2-3.1.6.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-56201",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.1.2",
+      "to_version": "3.1.6",
+      "link": "pull-requests/jinja2-3.1.6.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-56326",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.1.2",
+      "to_version": "3.1.6",
+      "link": "pull-requests/jinja2-3.1.6.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2025-27516",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.1.2",
+      "to_version": "3.1.6",
+      "link": "pull-requests/jinja2-3.1.6.md"
+    },
+    {
+      "package": "requests",
+      "vuln": "CVE-2024-35195",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.31.0",
+      "to_version": "2.33.0",
+      "link": "pull-requests/requests-2.33.0.md"
+    },
+    {
+      "package": "requests",
+      "vuln": "CVE-2024-47081",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.31.0",
+      "to_version": "2.33.0",
+      "link": "pull-requests/requests-2.33.0.md"
+    },
+    {
+      "package": "requests",
+      "vuln": "CVE-2026-25645",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.31.0",
+      "to_version": "2.33.0",
+      "link": "pull-requests/requests-2.33.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2024-37891",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2025-50181",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2025-66418",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2025-66471",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2026-21441",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2026-44431",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2026-97687",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "urllib3",
+      "vuln": "CVE-2026-97689",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.26.18",
+      "to_version": "2.8.0",
+      "link": "pull-requests/urllib3-2.8.0.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2023-23934",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2023-25577",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2023-46136",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2024-34069",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2024-49766",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2024-49767",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2025-66221",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2026-102598",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2026-21860",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "werkzeug",
+      "vuln": "CVE-2026-27199",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.2.2",
+      "to_version": null,
+      "link": "issues/security-werkzeug-2-2-2-needs-manual-review-tests-failed.md"
+    }
+  ]
+}

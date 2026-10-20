@@ -1,0 +1,180 @@
+{
+  "repo": "eval/fixtures/auth-service",
+  "mode": "rules (no model configured)",
+  "summary": {
+    "vulnerabilities": 18,
+    "fixed": 6,
+    "escalated": 12,
+    "escalated_by_reason": {
+      "no-safe-version": 1,
+      "tests-failed": 11
+    },
+    "pull_requests": 4,
+    "issues": 2
+  },
+  "notes": [],
+  "outcomes": [
+    {
+      "package": "certifi",
+      "vuln": "CVE-2023-37920",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2022.12.7",
+      "to_version": "2024.7.4",
+      "link": "pull-requests/certifi-2024.7.4.md"
+    },
+    {
+      "package": "certifi",
+      "vuln": "CVE-2024-39689",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2022.12.7",
+      "to_version": "2024.7.4",
+      "link": "pull-requests/certifi-2024.7.4.md"
+    },
+    {
+      "package": "ecdsa",
+      "vuln": "CVE-2026-33936",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.18.0",
+      "to_version": "0.19.2",
+      "link": "pull-requests/ecdsa-0.19.2.md"
+    },
+    {
+      "package": "ecdsa",
+      "vuln": "CVE-2024-23342",
+      "outcome": "escalated",
+      "reason": "no-safe-version",
+      "from_version": "0.18.0",
+      "to_version": null,
+      "link": "issues/security-ecdsa-0-19-2-needs-manual-review-no-safe-version.md"
+    },
+    {
+      "package": "idna",
+      "vuln": "CVE-2024-3651",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.4",
+      "to_version": "3.15",
+      "link": "pull-requests/idna-3.15.md"
+    },
+    {
+      "package": "idna",
+      "vuln": "CVE-2026-45409",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "3.4",
+      "to_version": "3.15",
+      "link": "pull-requests/idna-3.15.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2022-29217",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2025-45768",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-101917",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-102267",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-102268",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-102269",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-102270",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-32597",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-48522",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-48524",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "pyjwt",
+      "vuln": "CVE-2026-48526",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "1.7.1",
+      "to_version": null,
+      "link": "issues/security-pyjwt-1-7-1-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "tqdm",
+      "vuln": "CVE-2024-34062",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "4.65.0",
+      "to_version": "4.66.3",
+      "link": "pull-requests/tqdm-4.66.3.md"
+    }
+  ]
+}

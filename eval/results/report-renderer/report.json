@@ -1,0 +1,188 @@
+{
+  "repo": "eval/fixtures/report-renderer",
+  "mode": "rules (no model configured)",
+  "summary": {
+    "vulnerabilities": 19,
+    "fixed": 15,
+    "escalated": 4,
+    "escalated_by_reason": {
+      "tests-failed": 4
+    },
+    "pull_requests": 3,
+    "issues": 1
+  },
+  "notes": [],
+  "outcomes": [
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-22195",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.11.3",
+      "to_version": null,
+      "link": "issues/security-jinja2-2-11-3-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-34064",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.11.3",
+      "to_version": null,
+      "link": "issues/security-jinja2-2-11-3-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2024-56326",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.11.3",
+      "to_version": null,
+      "link": "issues/security-jinja2-2-11-3-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "jinja2",
+      "vuln": "CVE-2025-27516",
+      "outcome": "escalated",
+      "reason": "tests-failed",
+      "from_version": "2.11.3",
+      "to_version": null,
+      "link": "issues/security-jinja2-2-11-3-needs-manual-review-tests-failed.md"
+    },
+    {
+      "package": "mako",
+      "vuln": "CVE-2022-40023",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.2.1",
+      "to_version": "1.3.12",
+      "link": "pull-requests/mako-1.3.12.md"
+    },
+    {
+      "package": "mako",
+      "vuln": "CVE-2026-44307",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "1.2.1",
+      "to_version": "1.3.12",
+      "link": "pull-requests/mako-1.3.12.md"
+    },
+    {
+      "package": "pygments",
+      "vuln": "CVE-2021-20270",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.7.1",
+      "to_version": "2.20.0",
+      "link": "pull-requests/pygments-2.20.0.md"
+    },
+    {
+      "package": "pygments",
+      "vuln": "CVE-2021-27291",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.7.1",
+      "to_version": "2.20.0",
+      "link": "pull-requests/pygments-2.20.0.md"
+    },
+    {
+      "package": "pygments",
+      "vuln": "CVE-2022-40896",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.7.1",
+      "to_version": "2.20.0",
+      "link": "pull-requests/pygments-2.20.0.md"
+    },
+    {
+      "package": "pygments",
+      "vuln": "CVE-2026-4539",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "2.7.1",
+      "to_version": "2.20.0",
+      "link": "pull-requests/pygments-2.20.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2021-32839",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2023-30608",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2024-4340",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2026-54284",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2026-59893",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2026-59894",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2026-71491",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "CVE-2026-84305",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    },
+    {
+      "package": "sqlparse",
+      "vuln": "GHSA-27jp-wm6q-gp25",
+      "outcome": "fixed",
+      "reason": null,
+      "from_version": "0.4.1",
+      "to_version": "0.6.0",
+      "link": "pull-requests/sqlparse-0.6.0.md"
+    }
+  ]
+}

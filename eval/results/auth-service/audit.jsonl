@@ -1,0 +1,51 @@
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/pip-audit", "-r", "/tmp/vra-eval-xc1lgw6r/auth-service/requirements.txt", "--disable-pip", "--no-deps", "--progress-spinner", "off", "-f", "json"], "cwd": null, "returncode": 1, "duration_s": 0.47, "ts": 1792439399.2864976}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "add", "--detach", "/tmp/vra-uv0hfh2t/baseline", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439399.3028955}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-uv0hfh2t/baseline/.vra-venv"], "cwd": "/tmp/vra-uv0hfh2t/baseline", "returncode": 0, "duration_s": 2.76, "ts": 1792439402.0645542}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/baseline/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-uv0hfh2t/baseline", "returncode": 0, "duration_s": 1.2, "ts": 1792439403.2631958}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/baseline/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-uv0hfh2t/baseline", "returncode": 0, "duration_s": 0.26, "ts": 1792439403.521281}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "remove", "--force", "/tmp/vra-uv0hfh2t/baseline"], "cwd": null, "returncode": 0, "duration_s": 0.06, "ts": 1792439403.5768294}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-c", "import platform;print(platform.python_version())"], "cwd": null, "returncode": 0, "duration_s": 0.02, "ts": 1792439403.594552}
+{"ts": 1792439403.689223, "package": "certifi", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "add", "--detach", "/tmp/vra-uv0hfh2t/certifi", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.02, "ts": 1792439403.7060537}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-uv0hfh2t/certifi/.vra-venv"], "cwd": "/tmp/vra-uv0hfh2t/certifi", "returncode": 0, "duration_s": 2.79, "ts": 1792439406.492946}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/certifi/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-uv0hfh2t/certifi", "returncode": 0, "duration_s": 1.4, "ts": 1792439407.8943183}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/certifi/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-uv0hfh2t/certifi", "returncode": 0, "duration_s": 0.19, "ts": 1792439408.0839882}
+{"ts": 1792439408.0841577, "package": "certifi", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-uv0hfh2t/certifi", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439408.088416}
+{"ts": 1792439408.0891314, "package": "certifi", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "remove", "--force", "/tmp/vra-uv0hfh2t/certifi"], "cwd": null, "returncode": 0, "duration_s": 0.05, "ts": 1792439408.1343796}
+{"ts": 1792439408.2255936, "package": "ecdsa", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "add", "--detach", "/tmp/vra-uv0hfh2t/ecdsa", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439408.2368157}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-uv0hfh2t/ecdsa/.vra-venv"], "cwd": "/tmp/vra-uv0hfh2t/ecdsa", "returncode": 0, "duration_s": 2.54, "ts": 1792439410.77367}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/ecdsa/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-uv0hfh2t/ecdsa", "returncode": 0, "duration_s": 1.34, "ts": 1792439412.1111257}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/ecdsa/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-uv0hfh2t/ecdsa", "returncode": 0, "duration_s": 0.2, "ts": 1792439412.3152285}
+{"ts": 1792439412.3154833, "package": "ecdsa", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-uv0hfh2t/ecdsa", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439412.318112}
+{"ts": 1792439412.3184485, "package": "ecdsa", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "remove", "--force", "/tmp/vra-uv0hfh2t/ecdsa"], "cwd": null, "returncode": 0, "duration_s": 0.04, "ts": 1792439412.3557777}
+{"ts": 1792439412.4252408, "package": "idna", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "add", "--detach", "/tmp/vra-uv0hfh2t/idna", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439412.4380093}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-uv0hfh2t/idna/.vra-venv"], "cwd": "/tmp/vra-uv0hfh2t/idna", "returncode": 0, "duration_s": 2.6, "ts": 1792439415.0375102}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/idna/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-uv0hfh2t/idna", "returncode": 0, "duration_s": 1.29, "ts": 1792439416.332822}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/idna/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-uv0hfh2t/idna", "returncode": 0, "duration_s": 0.2, "ts": 1792439416.5293257}
+{"ts": 1792439416.5295424, "package": "idna", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-uv0hfh2t/idna", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439416.532253}
+{"ts": 1792439416.5326047, "package": "idna", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "remove", "--force", "/tmp/vra-uv0hfh2t/idna"], "cwd": null, "returncode": 0, "duration_s": 0.04, "ts": 1792439416.5758886}
+{"ts": 1792439416.682586, "package": "pyjwt", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "add", "--detach", "/tmp/vra-uv0hfh2t/pyjwt", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439416.695271}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-uv0hfh2t/pyjwt/.vra-venv"], "cwd": "/tmp/vra-uv0hfh2t/pyjwt", "returncode": 0, "duration_s": 2.54, "ts": 1792439419.2342198}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/pyjwt/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-uv0hfh2t/pyjwt", "returncode": 0, "duration_s": 1.34, "ts": 1792439420.5724924}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/pyjwt/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-uv0hfh2t/pyjwt", "returncode": 1, "duration_s": 0.24, "ts": 1792439420.8149614}
+{"ts": 1792439420.8151689, "package": "pyjwt", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"ts": 1792439420.8172765, "package": "pyjwt", "event": "tool_call", "tool": "flag_for_review", "args": {"reason": "tests-failed", "explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "remove", "--force", "/tmp/vra-uv0hfh2t/pyjwt"], "cwd": null, "returncode": 0, "duration_s": 0.04, "ts": 1792439420.86007}
+{"ts": 1792439420.9433775, "package": "tqdm", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "add", "--detach", "/tmp/vra-uv0hfh2t/tqdm", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439420.9579601}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-uv0hfh2t/tqdm/.vra-venv"], "cwd": "/tmp/vra-uv0hfh2t/tqdm", "returncode": 0, "duration_s": 2.55, "ts": 1792439423.5067244}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/tqdm/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-uv0hfh2t/tqdm", "returncode": 0, "duration_s": 1.33, "ts": 1792439424.8358974}
+{"event": "command", "argv": ["/tmp/vra-uv0hfh2t/tqdm/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-uv0hfh2t/tqdm", "returncode": 0, "duration_s": 0.21, "ts": 1792439425.0438955}
+{"ts": 1792439425.0440843, "package": "tqdm", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-uv0hfh2t/tqdm", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439425.0471754}
+{"ts": 1792439425.0475245, "package": "tqdm", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-xc1lgw6r/auth-service", "worktree", "remove", "--force", "/tmp/vra-uv0hfh2t/tqdm"], "cwd": null, "returncode": 0, "duration_s": 0.05, "ts": 1792439425.0966358}

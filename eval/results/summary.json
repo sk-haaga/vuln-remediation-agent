@@ -1,0 +1,49 @@
+{
+  "mode": "rules",
+  "totals": {
+    "vulnerabilities": 67,
+    "fixed": 39,
+    "escalated": 28,
+    "pull_requests": 11,
+    "issues": 5
+  },
+  "escalated_by_reason": {
+    "no-safe-version": 1,
+    "tests-failed": 25,
+    "install-failed": 2
+  },
+  "repositories": {
+    "auth-service": {
+      "vulnerabilities": 18,
+      "fixed": 6,
+      "escalated": 12,
+      "escalated_by_reason": {
+        "no-safe-version": 1,
+        "tests-failed": 11
+      },
+      "pull_requests": 4,
+      "issues": 2
+    },
+    "report-renderer": {
+      "vulnerabilities": 19,
+      "fixed": 15,
+      "escalated": 4,
+      "escalated_by_reason": {
+        "tests-failed": 4
+      },
+      "pull_requests": 3,
+      "issues": 1
+    },
+    "web-app": {
+      "vulnerabilities": 30,
+      "fixed": 18,
+      "escalated": 12,
+      "escalated_by_reason": {
+        "install-failed": 2,
+        "tests-failed": 10
+      },
+      "pull_requests": 4,
+      "issues": 2
+    }
+  }
+}

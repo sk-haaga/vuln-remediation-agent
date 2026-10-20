@@ -1,0 +1,42 @@
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/pip-audit", "-r", "/tmp/vra-eval-6q2lv1na/report-renderer/requirements.txt", "--disable-pip", "--no-deps", "--progress-spinner", "off", "-f", "json"], "cwd": null, "returncode": 1, "duration_s": 0.64, "ts": 1792439425.8592687}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "add", "--detach", "/tmp/vra-wdj08j2a/baseline", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439425.8721657}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-wdj08j2a/baseline/.vra-venv"], "cwd": "/tmp/vra-wdj08j2a/baseline", "returncode": 0, "duration_s": 2.6, "ts": 1792439428.4717112}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/baseline/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-wdj08j2a/baseline", "returncode": 0, "duration_s": 1.9, "ts": 1792439430.3681448}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/baseline/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-wdj08j2a/baseline", "returncode": 0, "duration_s": 0.22, "ts": 1792439430.5908036}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "remove", "--force", "/tmp/vra-wdj08j2a/baseline"], "cwd": null, "returncode": 0, "duration_s": 0.06, "ts": 1792439430.6519618}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-c", "import platform;print(platform.python_version())"], "cwd": null, "returncode": 0, "duration_s": 0.03, "ts": 1792439430.6811953}
+{"ts": 1792439430.859587, "package": "jinja2", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "add", "--detach", "/tmp/vra-wdj08j2a/jinja2", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439430.873216}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-wdj08j2a/jinja2/.vra-venv"], "cwd": "/tmp/vra-wdj08j2a/jinja2", "returncode": 0, "duration_s": 2.54, "ts": 1792439433.4162657}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/jinja2/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-wdj08j2a/jinja2", "returncode": 0, "duration_s": 2.66, "ts": 1792439436.0774424}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/jinja2/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-wdj08j2a/jinja2", "returncode": 2, "duration_s": 0.35, "ts": 1792439436.4319634}
+{"ts": 1792439436.4321697, "package": "jinja2", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"ts": 1792439436.4327536, "package": "jinja2", "event": "tool_call", "tool": "flag_for_review", "args": {"reason": "tests-failed", "explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "remove", "--force", "/tmp/vra-wdj08j2a/jinja2"], "cwd": null, "returncode": 0, "duration_s": 0.05, "ts": 1792439436.4787798}
+{"ts": 1792439436.5342298, "package": "mako", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "add", "--detach", "/tmp/vra-wdj08j2a/mako", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439436.5415585}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-wdj08j2a/mako/.vra-venv"], "cwd": "/tmp/vra-wdj08j2a/mako", "returncode": 0, "duration_s": 2.56, "ts": 1792439439.1000972}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/mako/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-wdj08j2a/mako", "returncode": 0, "duration_s": 1.88, "ts": 1792439440.9759557}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/mako/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-wdj08j2a/mako", "returncode": 0, "duration_s": 0.25, "ts": 1792439441.2271428}
+{"ts": 1792439441.2273433, "package": "mako", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-wdj08j2a/mako", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439441.230332}
+{"ts": 1792439441.2306123, "package": "mako", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "remove", "--force", "/tmp/vra-wdj08j2a/mako"], "cwd": null, "returncode": 0, "duration_s": 0.05, "ts": 1792439441.2762368}
+{"ts": 1792439441.3373423, "package": "pygments", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "add", "--detach", "/tmp/vra-wdj08j2a/pygments", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439441.3450735}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-wdj08j2a/pygments/.vra-venv"], "cwd": "/tmp/vra-wdj08j2a/pygments", "returncode": 0, "duration_s": 2.5, "ts": 1792439443.842516}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/pygments/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-wdj08j2a/pygments", "returncode": 0, "duration_s": 2.18, "ts": 1792439446.0206873}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/pygments/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-wdj08j2a/pygments", "returncode": 0, "duration_s": 0.29, "ts": 1792439446.309164}
+{"ts": 1792439446.3093388, "package": "pygments", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-wdj08j2a/pygments", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439446.3132095}
+{"ts": 1792439446.3135257, "package": "pygments", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "remove", "--force", "/tmp/vra-wdj08j2a/pygments"], "cwd": null, "returncode": 0, "duration_s": 0.06, "ts": 1792439446.3744235}
+{"ts": 1792439446.4360049, "package": "sqlparse", "event": "tool_call", "tool": "plan_upgrade", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "add", "--detach", "/tmp/vra-wdj08j2a/sqlparse", "HEAD"], "cwd": null, "returncode": 0, "duration_s": 0.01, "ts": 1792439446.4452007}
+{"event": "command", "argv": ["/work/vuln-remediation-agent/.venv/bin/python", "-m", "venv", "/tmp/vra-wdj08j2a/sqlparse/.vra-venv"], "cwd": "/tmp/vra-wdj08j2a/sqlparse", "returncode": 0, "duration_s": 2.57, "ts": 1792439449.015289}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/sqlparse/.vra-venv/bin/python", "-m", "pip", "install", "-q", "-r", "requirements.txt", "-r", "requirements-dev.txt"], "cwd": "/tmp/vra-wdj08j2a/sqlparse", "returncode": 0, "duration_s": 1.91, "ts": 1792439450.9208114}
+{"event": "command", "argv": ["/tmp/vra-wdj08j2a/sqlparse/.vra-venv/bin/python", "-m", "pytest", "-q"], "cwd": "/tmp/vra-wdj08j2a/sqlparse", "returncode": 0, "duration_s": 0.26, "ts": 1792439451.1843374}
+{"ts": 1792439451.1845534, "package": "sqlparse", "event": "tool_call", "tool": "apply_upgrade_and_test", "args": {}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-wdj08j2a/sqlparse", "diff"], "cwd": null, "returncode": 0, "duration_s": 0.0, "ts": 1792439451.1896157}
+{"ts": 1792439451.18986, "package": "sqlparse", "event": "tool_call", "tool": "open_pull_request", "args": {"explanation": ""}, "ok": true}
+{"event": "command", "argv": ["git", "-C", "/tmp/vra-eval-6q2lv1na/report-renderer", "worktree", "remove", "--force", "/tmp/vra-wdj08j2a/sqlparse"], "cwd": null, "returncode": 0, "duration_s": 0.05, "ts": 1792439451.241412}
