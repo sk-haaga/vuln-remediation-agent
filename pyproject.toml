@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vuln-remediation-agent"
+version = "0.1.0"
+description = "AI agent that finds vulnerable dependencies, proposes the smallest safe upgrade, and opens a PR only when tests pass."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "sk-haaga" }]
+dependencies = [
+    "packaging>=24.0",
+    "pip-audit>=2.7",
+    "openai>=1.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+vra = "remediation_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: needs PyPI access (deselect with -m 'not network')"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["eval/fixtures"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
